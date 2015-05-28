@@ -39,13 +39,13 @@ echo $this->postal->get(); // THIS WILL RETURN ALL THE MESSAGES AS A STRING
 
 echo $this->postal->get('error'); // THIS WILL ONLY RETURN THE MESSAGES FROM A SPECIFIC GROUP OF MESSAGES
 
-echo $this->postal->get(array('succes','error')); // THIS WILL ONLY RETURN THE MESSAGES FROM SPECIFIED GROUPS
+echo $this->postal->get(array('success','error')); // THIS WILL ONLY RETURN THE MESSAGES FROM SPECIFIED GROUPS
 
 $messages = $this->postal->get(NULL, TRUE); // THIS WILL RETURN ALL MESSAGES AS AN ARRAY, WITHOUT ANY MESSAGE DELIMITERS
 
 $messages = $this->postal->get('error', TRUE); // THIS WILL ONLY RETURN THE MESSAGES FROM A SPECIFIC GROUP OF MESSAGES, WITHOUT ANY MESSAGE DELIMITERS
 
-$messages = $this->postal->get(array('succes','error'), TRUE); // THIS WILL ONLY RETURN THE MESSAGES FROM SPECIFIED GROUPS, WITHOUT ANY MESSAGE DELIMITERS
+$messages = $this->postal->get(array('success','error'), TRUE); // THIS WILL ONLY RETURN THE MESSAGES FROM SPECIFIED GROUPS, WITHOUT ANY MESSAGE DELIMITERS
 ```
 
 If you want to know how many messages are stored you can use:
