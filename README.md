@@ -3,7 +3,7 @@ CodeIgniter-Postal
 
 This library allows you to fast retrieve informational "flash" messages stored inside `$_SESSION['postal']`. Unlike the usual flash session data, this library will clear the messages only after they are retrieved. This way you can retrieve them at any time, remaining available even after one or more redirects, as long as the $_SESSION is not emptied!
 
-THIS LIBRARY ONLY WORKS WITH CODEIGNITER 3
+THIS LIBRARY ONLY WORKS WITH CODEIGNITER 3. If you want a CI2.x I recommend you to use the Jens Seger's Message library: https://github.com/jenssegers/codeigniter-message-library
 
 Usage
 -----
